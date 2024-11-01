@@ -63,6 +63,14 @@ Callback = function()
 })
 
 Tab:AddButton({
+Name = "Keyboard Script (needed for mobile moon bottle)",
+Callback = function()
+      print("Executed keyboard")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt"))()
+  end    
+})
+
+Tab:AddButton({
 Name = "Crucifix on anything (does not work Right now)",
 Callback = function()
       print("Executed Crucifix (does not work)")
