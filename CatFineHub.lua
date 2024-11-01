@@ -22,6 +22,12 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local SpeedTab = Window:MakeTab({
+Name = "Legends of Speed",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local UniversalTab = Window:MakeTab({
 Name = "Universal Scripts",
 Icon = "rbxassetid://4483345998",
@@ -59,14 +65,6 @@ Name = "Shears",
 Callback = function()
       print("Executed Shears")
   loadstring(game:HttpGet(('https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua')))()
-  end    
-})
-
-Tab:AddButton({
-Name = "Keyboard Script (needed for mobile moon bottle)",
-Callback = function()
-      print("Executed keyboard")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt"))()
   end    
 })
 
@@ -242,5 +240,14 @@ Name = "Wulphram",
 Callback = function()
       print("Executed Wulpharm")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/502Development/502Lua/main/games/3008.lua'))()
+  end    
+})
+
+
+SpeedTab:AddButton({
+Name = "Hub ",
+Callback = function()
+      print("Executed Hub")
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sim-Hub-Keyless-9825"))()
   end    
 })
