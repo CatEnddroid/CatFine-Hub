@@ -16,6 +16,12 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local PremTab = Window:MakeTab({
+Name = "Premium Only",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = true
+})
+
 local SlapTab = Window:MakeTab({
 Name = "Slap Battles",
 Icon = "rbxassetid://4483345998",
