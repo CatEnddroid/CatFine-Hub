@@ -16,6 +16,18 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local pressureTab = Window:MakeTab({
+Name = "Pressure",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local TSBTab = Window:MakeTab({
+Name = "TSB",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local CreditsTab = Window:MakeTab({
 Name = "Credits",
 Icon = "rbxassetid://4483345998",
@@ -24,6 +36,12 @@ PremiumOnly = false
 
 local SpeedTab = Window:MakeTab({
 Name = "Legends of Speed",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local EvadeTab = Window:MakeTab({
+Name = "Evade",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
@@ -48,6 +66,18 @@ local Section = Tab:AddSection({
 Name = "Items (Scroll for More)"
 })
 
+local Section = EvadeTab:AddSection({
+Name = "Hubs"
+})
+
+local Section = pressureTab:AddSection({
+Name = "Hubs"
+})
+
+local Section = TSBTab:AddSection({
+Name = "Hubs"
+})
+
 
 local Section = MM2Tab:AddSection({
 Name = "Hubs"
@@ -65,6 +95,14 @@ Name = "Shears",
 Callback = function()
       print("Executed Shears")
   loadstring(game:HttpGet(('https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua')))()
+  end    
+})
+
+Tab:AddButton({
+Name = "Eat Everything (fork and knife to eat)",
+Callback = function()
+      print("Executed Eat Everything")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnyGamingLUA/EatEverythingDOORS/main/obfuscated.lua"))()
   end    
 })
 
@@ -160,6 +198,27 @@ Name = "Hubs"
 })
 
 Tab:AddButton({
+Name = "Backdoor helper",
+Callback = function()
+      print("Executed Backdoor helper")
+_G.IY = true -- Infinite Yield
+_G.Bypass = true -- Bypass haste and Backdoor lookman
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Backdoors.lua"))()
+  end    
+})
+
+Tab:AddButton({
+Name = "FFJ1 Hub",
+Callback = function()
+      print("Executed FFJ1 Hub")
+_G.IY = true -- Infinite Yield
+_G.Bypass = true -- Bypass haste and Backdoor lookman
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+  end    
+})
+
+
+Tab:AddButton({
 Name = "mspaint v3 (no longer gets updates)",
 Callback = function()
       print("Executed mspaint")
@@ -220,7 +279,7 @@ Name = "Modes"
 })
 
 Tab:AddButton({
-Name = "Impossible Mode (execute before door 1 opend)",
+Name = "Impossible Mode (will maybe be replaced with something)",
 Callback = function()
       print("Executed Impossible Mode")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt"))()
@@ -249,5 +308,29 @@ Name = "Hub ",
 Callback = function()
       print("Executed Hub")
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sim-Hub-Keyless-9825"))()
+  end    
+})
+
+TSBTab:AddButton({
+Name = "cheate",
+Callback = function()
+      print("Executed cheate")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sandwichk/RobloxScripts/main/Scripts/BadWare/Hub/Load.lua", true))()
+  end    
+})
+
+pressureTab:AddButton({
+Name = "cheate",
+Callback = function()
+      print("Executed Personal Hub")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LordEyes2/Script/main/PersonalHub"))()
+  end    
+})
+
+EvadeTab:AddButton({
+Name = "Evade Hub (on this mouse is invisible)",
+Callback = function()
+      print("Executed Evade Hub")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
   end    
 })
