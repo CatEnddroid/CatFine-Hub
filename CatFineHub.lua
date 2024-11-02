@@ -16,6 +16,12 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local SlapTab = Window:MakeTab({
+Name = "Slap Battles",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local pressureTab = Window:MakeTab({
 Name = "Pressure",
 Icon = "rbxassetid://4483345998",
@@ -62,6 +68,10 @@ local Section = CreditsTab:AddSection({
 Name = "Credits"
 })
 
+local Section = SlapTab:AddSection({
+Name = "Hubs"
+})
+
 local Section = Tab:AddSection({
 Name = "Items (Scroll for More)"
 })
@@ -95,6 +105,22 @@ Name = "Shears",
 Callback = function()
       print("Executed Shears")
   loadstring(game:HttpGet(('https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua')))()
+  end    
+})
+
+Tab:AddButton({
+Name = "Guiding Scanner",
+Callback = function()
+      print("Executed Guiding Scanner")
+  loadstring(game:HttpGet("https://pastebin.com/raw/iBBqfYzn"))()
+  end    
+})
+
+Tab:AddButton({
+Name = "Golden Scanner",
+Callback = function()
+      print("Executed Golden Scanner")
+  loadstring(game:HttpGet("https://pastebin.com/raw/umRteEPy"))()
   end    
 })
 
@@ -332,5 +358,13 @@ Name = "Evade Hub (on this mouse is invisible)",
 Callback = function()
       print("Executed Evade Hub")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
+  end    
+})
+
+SlapTab:AddButton({
+Name = "Forge Hub (does have a key system)",
+Callback = function()
+      print("Executed Forge Hub")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua'))()
   end    
 })
