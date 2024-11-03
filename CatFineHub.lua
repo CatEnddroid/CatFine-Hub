@@ -240,6 +240,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/mai
 })
 
 Tab:AddButton({
+Name = "Custom Item Giver (some items are already here)",
+Callback = function()
+      print("Executed Custom Items")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/DOORS-REBOUNCES/refs/heads/main/main-ig"))()
+  end    
+})
+
+Tab:AddButton({
 Name = "FFJ1 Hub",
 Callback = function()
       print("Executed FFJ1 Hub")
@@ -285,6 +293,14 @@ Name = "Infinite Yield",
 Callback = function()
       print("Executed Infinite Yield")
   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  end    
+})
+
+UniversalTab:AddButton({
+Name = "Universal Hub",
+Callback = function()
+      print("Executed Universal Hub")
+  loadstring(game:HttpGet("https://pastebin.com/raw/dZ49YxjW", true))()
   end    
 })
 
@@ -372,5 +388,14 @@ Name = "Forge Hub (does have a key system)",
 Callback = function()
       print("Executed Forge Hub")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua'))()
+  end    
+})
+
+PremTab:AddButton({
+Name = "Grass Scanner (does not work for some reason)",
+Callback = function()
+      print("Executed Grass Scanner")
+_G.scanner_fps = 100
+loadstring(game:HttpGet("https://pastebin.com/raw/SktUuqFb"))()
   end    
 })
