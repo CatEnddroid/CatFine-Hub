@@ -58,6 +58,12 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local DisasterTab = Window:MakeTab({
+Name = "NDS",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local UniversalTab = Window:MakeTab({
 Name = "Universal Scripts",
 Icon = "rbxassetid://4483345998",
@@ -119,6 +125,14 @@ Name = "Guiding Scanner",
 Callback = function()
       print("Executed Guiding Scanner")
   loadstring(game:HttpGet("https://pastebin.com/raw/iBBqfYzn"))()
+  end    
+})
+
+Tab:AddButton({
+Name = "Grass Scanner",
+Callback = function()
+      print("Executed Grass Scanner")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/grass%20tablet.lua"))()
   end    
 })
 
@@ -300,7 +314,7 @@ UniversalTab:AddButton({
 Name = "Universal Hub",
 Callback = function()
       print("Executed Universal Hub")
-  loadstring(game:HttpGet("https://pastebin.com/raw/dZ49YxjW", true))()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   end    
 })
 
