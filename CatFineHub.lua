@@ -121,7 +121,7 @@ Callback = function()
 })
 
 Tab:AddButton({
-Name = "Guiding Scanner",
+Name = "Guiding Scanner|Crossroads person",
 Callback = function()
       print("Executed Guiding Scanner")
   loadstring(game:HttpGet("https://pastebin.com/raw/iBBqfYzn"))()
@@ -129,7 +129,7 @@ Callback = function()
 })
 
 Tab:AddButton({
-Name = "Grass Scanner",
+Name = "Grass Scanner|Crossroads person",
 Callback = function()
       print("Executed Grass Scanner")
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/grass%20tablet.lua"))()
@@ -137,7 +137,7 @@ Callback = function()
 })
 
 Tab:AddButton({
-Name = "Golden Scanner",
+Name = "Golden Scanner|Crossroads person",
 Callback = function()
       print("Executed Golden Scanner")
   loadstring(game:HttpGet("https://pastebin.com/raw/umRteEPy"))()
@@ -153,7 +153,7 @@ Callback = function()
 })
 
 Tab:AddButton({
-Name = "Crucifix on anything (does not work Right now)",
+Name = "Crucifix on anything|kardin hong (does not work Right now)",
 Callback = function()
       print("Executed Crucifix (does not work)")
   _G.Uses = 414141414141
@@ -174,7 +174,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/CatEnddroid/Holyhand
 })
 
 Tab:AddButton({
-Name = "Moon Bottle",
+Name = "Moon Bottle|Indexell",
 Callback = function()
       print("Executed Moon Bottle")
 loadstring(game:HttpGet(('https://gist.githubusercontent.com/IdkMyNameLoll/04d7dd5e02688624b958b8c2604b924c/raw/9e86b34249f44ed2dd433176e67daaf3db30cde8/MoonBottle')))()
@@ -182,7 +182,7 @@ loadstring(game:HttpGet(('https://gist.githubusercontent.com/IdkMyNameLoll/04d7d
 })
 
 Tab:AddButton({
-Name = "Spiral Bottle",
+Name = "Spiral Bottle|Indexell",
 Callback = function()
       print("Executed Spiral Bottle")
 loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/8b05c837bea9effac2554340465b4be1/raw/3f3be0ee72e7f153db39a16a40fa63dce6cde72d/SpiralBottle'))()
@@ -273,7 +273,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/
 
 
 Tab:AddButton({
-Name = "mspaint v3 (no longer gets updates)",
+Name = "mspaint v3|upio (no longer gets updates)",
 Callback = function()
       print("Executed mspaint")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
@@ -311,7 +311,7 @@ Callback = function()
 })
 
 UniversalTab:AddButton({
-Name = "Guiding Hack",
+Name = "Guiding Hack|Guiding Light",
 Callback = function()
       print("Executed Guiding Hack")
   loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
@@ -413,11 +413,3 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Skzuppy/forge-hub/mai
   end    
 })
 
-PremTab:AddButton({
-Name = "Grass Scanner (does not work for some reason)",
-Callback = function()
-      print("Executed Grass Scanner")
-_G.scanner_fps = 100
-loadstring(game:HttpGet("https://pastebin.com/raw/SktUuqFb"))()
-  end    
-})
