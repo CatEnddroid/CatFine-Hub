@@ -145,6 +145,14 @@ Callback = function()
 })
 
 Tab:AddButton({
+Name = "Gravity Gun",
+Callback = function()
+      print("Executed Gravity Gun(NEW!)")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Fuydutdtu/FEGravityGun/refs/heads/main/Gravity.lua"))()
+  end    
+})
+
+Tab:AddButton({
 Name = "Eat Everything (fork and knife to eat)",
 Callback = function()
       print("Executed Eat Everything")
@@ -155,7 +163,7 @@ Callback = function()
 Tab:AddButton({
 Name = "Crucifix on anything|kardin hong (does not work Right now)",
 Callback = function()
-      print("Executed Crucifix (does not work)")
+      print("Executed Crucifix (doesnt work on solara,zorara,fluxteam,betterzorara)")
   _G.Uses = 414141414141
 _G.Range = 30
 _G.OnAnything = true
@@ -250,6 +258,14 @@ Callback = function()
 _G.IY = true -- Infinite Yield
 _G.Bypass = true -- Bypass haste and Backdoor lookman
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Backdoors.lua"))()
+  end    
+})
+
+Tab:AddButton({
+Name = "Rafanchik123 (Mobile NEW!)",
+Callback = function()
+      print("Executed Rafanchik123")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
   end    
 })
 
