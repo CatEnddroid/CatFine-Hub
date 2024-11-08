@@ -16,12 +16,6 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local PremTab = Window:MakeTab({
-Name = "Premium Only",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = true
-})
-
 local SlapTab = Window:MakeTab({
 Name = "Slap Battles",
 Icon = "rbxassetid://4483345998",
@@ -161,19 +155,6 @@ Callback = function()
 })
 
 Tab:AddButton({
-Name = "Crucifix on anything|kardin hong (does not work Right now)",
-Callback = function()
-      print("Executed Crucifix (doesnt work on solara,zorara,fluxteam,betterzorara)")
-  _G.Uses = 414141414141
-_G.Range = 30
-_G.OnAnything = true
-_G.Fail = false
-_G.Variant = "Electric"
-loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
-  end    
-})
-
-Tab:AddButton({
 Name = "Holy Hand Grenade",
 Callback = function()
       print("Executed Holy Hand Grenade")
@@ -248,6 +229,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/
 })
 
 local Section = Tab:AddSection({
+Name = "Models"
+})
+
+Tab:AddButton({
+Name = "Curious Portal (NEW!)",
+Callback = function()
+      print("Executed Curious Portal")
+loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()
+  end    
+})
+
+local Section = Tab:AddSection({
 Name = "Hubs"
 })
 
@@ -258,14 +251,6 @@ Callback = function()
 _G.IY = true -- Infinite Yield
 _G.Bypass = true -- Bypass haste and Backdoor lookman
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Backdoors.lua"))()
-  end    
-})
-
-Tab:AddButton({
-Name = "Rafanchik123 (Mobile NEW!)",
-Callback = function()
-      print("Executed Rafanchik123")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
   end    
 })
 
@@ -358,18 +343,8 @@ Callback = function()
   end    
 })
 
-
-
 local Section = Tab:AddSection({
 Name = "Modes"
-})
-
-Tab:AddButton({
-Name = "Impossible Mode (will maybe be replaced with something)",
-Callback = function()
-      print("Executed Impossible Mode")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt"))()
-  end    
 })
 
 Tab:AddButton({
@@ -428,4 +403,3 @@ Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua'))()
   end    
 })
-
