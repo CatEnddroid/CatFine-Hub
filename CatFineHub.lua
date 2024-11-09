@@ -45,6 +45,28 @@ Callback = function()
 })
 
 Tab:AddButton({
+Name = "Glitch Scanner",
+Callback = function()
+      print("Executed Glitch Scanner")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Glitched%20Scanner%20ORIGINAL"))()
+  end    
+})
+
+Tab:AddButton({
+Name = "https://discord.gg/wpt7zaREtg",
+Callback = function()
+      print("Join that Dc Server")
+  end    
+})
+
+Tab:AddButton({
+Name = "https://www.youtube.com/@doorsmods",
+Callback = function()
+      print("Sub to him")
+  end    
+})
+
+Tab:AddButton({
 Name = "Golden Scanner|Crossroads person",
 Callback = function()
       print("Executed Golden Scanner")
@@ -203,7 +225,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-o
   end    
 })
 
-UniversalTab:AddButton({
+Tab:AddButton({
 Name = "Guiding Hack|Guiding Light",
 Callback = function()
       print("Executed Guiding Hack")
@@ -219,7 +241,7 @@ PremiumOnly = false
 
 SetTab:AddColorpicker({
       Name = "Colorpicker",
-      Default = Color5.fromRGB(255, 0, 0),
+      Default = Color3.fromRGB(255, 0, 0),
       Callback = function(Value)
             print(Value)
       end	  
