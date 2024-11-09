@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Cat Fine", HidePremium = false, IntroText = "Cat Fine" , SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Kitty Cats Doors", HidePremium = false, IntroText = "Kitty Cats Doors" , SaveConfig = true, ConfigFolder = "OrionTest"})
 
 print("Succes")
 
@@ -16,95 +16,9 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local SlapTab = Window:MakeTab({
-Name = "Slap Battles",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local pressureTab = Window:MakeTab({
-Name = "Pressure",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local TSBTab = Window:MakeTab({
-Name = "TSB",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local CreditsTab = Window:MakeTab({
-Name = "Credits",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local SpeedTab = Window:MakeTab({
-Name = "Legends of Speed",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local EvadeTab = Window:MakeTab({
-Name = "Evade",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local DisasterTab = Window:MakeTab({
-Name = "NDS",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local UniversalTab = Window:MakeTab({
-Name = "Universal Scripts",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local MM2Tab = Window:MakeTab({
-Name = "MM2",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
-local Section = CreditsTab:AddSection({
-Name = "Credits"
-})
-
-local Section = SlapTab:AddSection({
-Name = "Hubs"
-})
-
 local Section = Tab:AddSection({
-Name = "Items (Scroll for More)"
+Name = "Items"
 })
-
-local Section = EvadeTab:AddSection({
-Name = "Hubs"
-})
-
-local Section = pressureTab:AddSection({
-Name = "Hubs"
-})
-
-local Section = TSBTab:AddSection({
-Name = "Hubs"
-})
-
-
-local Section = MM2Tab:AddSection({
-Name = "Hubs"
-})
-
-local Ikea3008Tab = Window:MakeTab({
-Name = "3008",
-Icon = "rbxassetid://4483345998",
-PremiumOnly = false
-})
-
 
 Tab:AddButton({
 Name = "Shears",
@@ -289,28 +203,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-o
   end    
 })
 
-
-CreditsTab:AddButton({
-Name = "Everything Made by Catend5 (for now)",
-Callback = function()
-      print("join my discord")
-  end    
-})
-
-CreditsTab:AddButton({
-Name = "discord: https://discord.gg/qkXK8Pfzuz",
-Callback = function()
-  end    
-})
-
-UniversalTab:AddButton({
-Name = "Infinite Yield",
-Callback = function()
-      print("Executed Infinite Yield")
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-  end    
-})
-
 UniversalTab:AddButton({
 Name = "Guiding Hack|Guiding Light",
 Callback = function()
@@ -319,87 +211,17 @@ Callback = function()
   end    
 })
 
-UniversalTab:AddButton({
-Name = "Universal Hub",
-Callback = function()
-      print("Executed Universal Hub")
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-  end    
+local SetTab = Window:MakeTab({
+Name = "Settings",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
 })
 
-UniversalTab:AddButton({
-Name = "Fling GUI",
-Callback = function()
-      print("Executed FLING GUI")
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/CatEnddroid/Fling-GUI/refs/heads/main/FLINGGUI.lua'))()
-  end    
+SetTab:AddColorpicker({
+      Name = "Colorpicker",
+      Default = Color5.fromRGB(255, 0, 0),
+      Callback = function(Value)
+            print(Value)
+      end	  
 })
-
-MM2Tab:AddButton({
-Name = "xHub3000MM2",
-Callback = function()
-      print("Executed xHub3000MM2")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
-  end    
-})
-
-local Section = Tab:AddSection({
-Name = "Modes"
-})
-
-Tab:AddButton({
-Name = "Horror Mode (execute before door 1 opend)",
-Callback = function()
-      print("Executed Horror Mode")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Game/Horror.lua"))()
-  end    
-})
-
-Ikea3008Tab:AddButton({
-Name = "Wulphram",
-Callback = function()
-      print("Executed Wulpharm")
-loadstring(game:HttpGet('https://raw.githubusercontent.com/502Development/502Lua/main/games/3008.lua'))()
-  end    
-})
-
-
-SpeedTab:AddButton({
-Name = "Hub ",
-Callback = function()
-      print("Executed Hub")
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sim-Hub-Keyless-9825"))()
-  end    
-})
-
-TSBTab:AddButton({
-Name = "cheate",
-Callback = function()
-      print("Executed cheate")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sandwichk/RobloxScripts/main/Scripts/BadWare/Hub/Load.lua", true))()
-  end    
-})
-
-pressureTab:AddButton({
-Name = "cheate",
-Callback = function()
-      print("Executed Personal Hub")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LordEyes2/Script/main/PersonalHub"))()
-  end    
-})
-
-EvadeTab:AddButton({
-Name = "Evade Hub (on this mouse is invisible)",
-Callback = function()
-      print("Executed Evade Hub")
-loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
-  end    
-})
-
-SlapTab:AddButton({
-Name = "Forge Hub (does have a key system)",
-Callback = function()
-      print("Executed Forge Hub")
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua'))()
-  end    
-})
+ColorPicker:Set(Color3.fromRGB(255,255,255))
