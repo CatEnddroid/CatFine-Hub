@@ -83,10 +83,35 @@ Callback = function()
 })
 
 Tab:AddButton({
+Name = "Magnet (NEW!)",
+Callback = function()
+      print("Executed Magnet (NEW!)")
+  loadstring(game:HttpGet("https://pastebin.com/raw/PFERptU5", true))()
+  end    
+})
+
+Tab:AddButton({
+Name = "Bird (NEW!)",
+Callback = function()
+      print("Executed Bird (NEW!)")
+loadstring(game:HttpGet("https://pastebin.com/raw/PFERptU5", true))())
+  end    
+})
+
+Tab:AddButton({
+Name = "btools (NEW!)",
+Callback = function()
+      print("Executed btools (NEW!)")
+loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+  end    
+})
+
+Tab:AddButton({
 Name = "Eat Everything (fork and knife to eat)",
 Callback = function()
       print("Executed Eat Everything")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnyGamingLUA/EatEverythingDOORS/main/obfuscated.lua"))()
+   
   end    
 })
 
@@ -233,6 +258,14 @@ Callback = function()
   end    
 })
 
+Tab:AddButton({
+Name = "REBOUNCES (NEW!)",
+Callback = function()
+      print("Executed REBOUNCES(NEW!)")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/DOORS-REBOUNCES/refs/heads/main/main-ig"))()
+  end    
+})
+
 local SetTab = Window:MakeTab({
 Name = "Settings",
 Icon = "rbxassetid://4483345998",
@@ -247,3 +280,4 @@ SetTab:AddColorpicker({
       end	  
 })
 ColorPicker:Set(Color3.fromRGB(255,255,255))
+
