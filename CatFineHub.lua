@@ -281,3 +281,5 @@ SetTab:AddColorpicker({
 })
 ColorPicker:Set(Color3.fromRGB(255,255,255))
 
+end
+OrionLib:Init()
