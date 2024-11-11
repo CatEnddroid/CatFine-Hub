@@ -13,7 +13,7 @@ _G.Key = "Test"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-loadstring(game:httpget(("https://github.com/CatEnddroid/CatFine-Hub/blob/main/CatFineHub.lua")))()
+loadstring(game:httpget(("https://github.com/CatEnddroid/CatFine-Hub/blob/main/CatFineHub.lua"))()
 end
 
 local Tab = Window:MakeTab({
