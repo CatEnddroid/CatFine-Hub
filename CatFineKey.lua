@@ -1,66 +1,43 @@
---[[
-  WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "KeySystem", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Kitty Cats Doors| Key System", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Key System"})
 
 OrionLib:MakeNotification({
-  Name = "Your in!",
-  Content = "Your In The Special LEAN party",
-  Image = "rbxassetid://4483345998",
-  Time = 5
+	Name = "You need Key",
+	Content = "hi get key",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
 
-_G.Key = "NEW" -- You Put Your Key Here
+
+_G.Key = "Test"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-loadstring(game:HttpGet(("https://github.com/CatEnddroid/CatFine-Hub/blob/main/CatFineHub.lua"), true))() -- You Put Your Script Here
-
-end
-
-
-function CorrectKeyNotifications()
-    OrionLib:MakeNotification({
-        Name = "Correct Key",
-        Content = "Welcome To The LEAN PARTY :D",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
-function WrongKeyNotifications()
-    OrionLib:MakeNotification({
-        Name = " Wrong Key",
-        Content = "Your Not on The List Kid",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
+loadstring(game:httpget(("https://github.com/CatEnddroid/CatFine-Hub/blob/main/CatFineHub.lua")))()
 end
 
 local Tab = Window:MakeTab({
-  Name = "Key Room",
-  Icon = "rbxassetid://4483345998",
-  PremiumOnly = false
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
+  
 Tab:AddTextbox({
   Name = "Enter Key",
-  Default = "Enter Key",
+  Default = "Key",
   TextDisappear = true,
   Callback = function(Value)
-        _G.KeyInput = Value
+    print(Value)
+   _G.KeyInput = Value
   end	  
 })
 
 Tab:AddButton({
-  Name = "Check Key!",
+  Name = "Check Key",
   Callback = function()
-        if _G.KeyInput == _G.Key then
-         MakeScriptHub()
-         CorrectKeyNotifications()
-     else
-        WrongKeyNotifications()
+  if _G.KeyInput == _G.Key then     
+          MakeScriptHub()
         end
     end    
 })
