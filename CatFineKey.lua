@@ -8,13 +8,13 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-
-_G.Key = "test"
+_G.CKey = "Infinite"
+_G.Key = "Cat"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
 print ("EnteredCorrectKey")
-local Window = OrionLib:MakeWindow({Name = "Kitty Cats Doors", HidePremium = false, IntroText = "Kitty Cats Doors" , SaveConfig = true, IntroEnabled = true, IntroText = "Kitty Cats Doors"})
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/CatEnddroid/Kitty-Cats-Doors-Beta/refs/heads/main/hub.lua")))()
 end
 
 function CorrectKeyNotification()
@@ -55,6 +55,7 @@ Tab:AddButton({
 	Name = "Check Key",
 	Callback = function()
       		if _G.KeyInput == _G.Key then
+				if _G.KeyInput == _G.CKey = "Infinite" then
 			  MakeScriptHub()
 			  CorrectKeyNotification()
 			  else
